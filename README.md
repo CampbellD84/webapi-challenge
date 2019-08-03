@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+I learned that to use Express, you have to create an instance of an Express App first then make route handlers where depending on what comes after the . (get, post, put, delete, ...etc.), Express does something to handle the data coming back. Also, I learned about how to get data from route parameters by using req.params.
+
 - [ ] Describe Middleware?
+
+Middleware are a collection (think array) of functions that add features to the server code. You can add middleware by custom building it into your app, installing third party middleware by grabbing it from npm and adding it using the server.user(nameOfMiddleware) or use the built in middleware included with Express.
 
 - [ ] Describe a Resource?
 
+A Resource is whatever you are sending back from the server to the client. It can be anything you interact with and is accessible using a unique URI.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+An API can return a HTTP status code to let clients know if a request is successful. The HTTP status code for success is 200.
+
 - [ ] How can we partition our application into sub-applications?
+
+By using Express Routers and splitting application logic into smaller bits that handle different things.
 
 ## Project Setup
 
